@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse our wide range of fashion categories at FashionFusion. Find jackets, shirts, hoodies, and more in our curated collection.">
+    <link rel="icon" type="image/webp" href="images/fav.webp">
     <title>Categories - FashionFusion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="js/categories.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="header-content">
             <a href="index.html" class="logo">FashionFusion</a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="auth.html" class="account-btn"><i class="fas fa-user"></i></a>
+                <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
+                <span id="user-name"></span>
+                <button id="logout-button" style="display: none;">Exit</button>
                 <button class="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
@@ -52,7 +60,7 @@
         <div class="categories-grid" id="categories-grid">
             <!-- Jackets Category -->
             <div class="category-card" data-category="jackets">
-                <img src="https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500" alt="Denim Jacket" class="category-image">
+                <img src="images/categories/categories.webp" alt="Denim Jacket" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Denim Jacket</h2>
            
@@ -60,7 +68,7 @@
             </div>
 
             <div class="category-card" data-category="shirts">
-                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500" alt="Long sleeve shirt" class="category-image">
+                <img src="images/categories/categories2.webp" alt="Long sleeve shirt" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Long sleeve shirt</h2>
            
@@ -68,7 +76,7 @@
             </div>
 
             <div class="category-card" data-category="jackets">
-                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500" alt="Motorcycle Jacket" class="category-image">
+                <img src="images/categories/categories3.webp" alt="Motorcycle Jacket" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Motorcycle Jacket</h2>
            
@@ -76,7 +84,7 @@
             </div>
 
             <div class="category-card" data-category="shirts">
-                <img src="https://images.unsplash.com/photo-1626497764746-6dc36546b388?w=500" alt="Sleeve polo shirt" class="category-image">
+                <img src="images/categories/categories4.webp" alt="Sleeve polo shirt" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Sleeve polo shirt</h2>
            
@@ -84,7 +92,7 @@
             </div>
 
             <div class="category-card" data-category="jackets">
-                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500" alt="American Style Hoodie" class="category-image">
+                <img src="images/categories/categories5.webp" alt="American Style Hoodie" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">American Style Hoodie</h2>
            
@@ -92,7 +100,7 @@
             </div>
 
             <div class="category-card" data-category="jackets">
-                <img src="https://images.unsplash.com/photo-1559551409-dadc959f76b8?w=500" alt="Baseball Jacket" class="category-image">
+                <img src="images/categories/categories6.webp" alt="Baseball Jacket" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Baseball Jacket</h2>
            
@@ -100,7 +108,7 @@
             </div>
 
             <div class="category-card" data-category="jackets">
-                <img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?w=500" alt="Leather Jacket" class="category-image">
+                <img src="images/categories/categories7.webp" alt="Leather Jacket" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Leather Jacket</h2>
            
@@ -108,13 +116,18 @@
             </div>
 
             <div class="category-card" data-category="shirts">
-                <img src="https://images.unsplash.com/photo-1580741569354-08feedd159f9?w=500" alt="Football T-Shirt" class="category-image">
+                <img src="images/categories/categories8.webp" alt="Football T-Shirt" class="category-image">
                 <div class="category-info">
                     <h2 class="category-title">Football T-Shirt</h2>
-           
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+        <button id="accept-cookies" class="btn btn-cookie">Accept</button>
+        <button id="reject-cookies" class="btn btn-cookie-reject">Decline</button>
     </div>
 </main>
 
@@ -127,7 +140,7 @@
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
                 </ul>
@@ -145,13 +158,16 @@
             <div class="footer-section newsletter">
                 <h2>10% OFF YOUR FIRST PURCHASE</h2>
                 <p class="newsletter-description">
-                    Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion tips.
+                    Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
+                    tips.
                 </p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" id="newsletter-form" action="thanks_form.php" method="post">
                     <div class="input-group">
-                        <input type="email" placeholder="Email address" required>
+                        <input type="email" name="email" placeholder="Email address" required>
                         <button type="submit" class="submit-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
@@ -161,20 +177,32 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 FashionFusion. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-facebook"></i></a>
                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
             </div>
+            <p>© 2025 FashionFusion. All rights reserved.</p>
         </div>
     </div>
 </footer>
 
-
+<section id="subscription-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Thank You for Subscribing!</h3>
+        <p>We appreciate your interest in FashionFusion. You'll now receive our latest updates and exclusive offers.</p>
+        <button id="subscription-popup-ok" class="popup-ok-btn">OK</button>
+    </div>
+</section>
 </body>
 </html>
 

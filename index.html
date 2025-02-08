@@ -6,6 +6,7 @@
     <title>FashionFusion - Modern Fashion Store</title>
     <meta name="description"
           content="Discover the latest fashion trends at FashionFusion. Shop stylish clothing, accessories, and more for men and women.">
+    <link rel="icon" type="image/webp" href="images/fav.webp">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -27,18 +28,25 @@
     <div class="container">
         <div class="header-content">
             <a href="index.html" class="logo">FashionFusion</a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="auth.html" class="account-btn"><i class="fas fa-user"></i></a>
+                <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
+                <span id="user-name"></span>
+                <button id="logout-button" style="display: none;">Exit</button>
                 <button class="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
@@ -54,7 +62,7 @@
     <section class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content-main">
                 <div class="hero-text">
                     <h1>Exclusive Collections<br>For Z-Generation</h1>
                     <div class="hero-buttons">
@@ -112,22 +120,22 @@
             <div class="categories-grid">
                 <a href="categories.html" class="category-card wow animate__animated animate__fadeInLeft"
                    data-wow-delay="0.2s">
-                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=400" alt="Denim Jacket">
+                    <img src="images/categories/categories.webp" alt="Denim Jacket">
                     <h3>Denim Jacket</h3>
                 </a>
                 <a href="categories.html" class="category-card wow animate__animated animate__fadeInLeft"
                    data-wow-delay="0.4s">
-                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400" alt="Summer Dresses">
+                    <img src="images/categories/categories9.webp" alt="Summer Dresses">
                     <h3>Summer Dresses</h3>
                 </a>
                 <a href="categories.html" class="category-card wow animate__animated animate__fadeInRight"
                    data-wow-delay="0.6s">
-                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" alt="Jeans">
+                    <img src="images/categories/categories10.webp" alt="Jeans">
                     <h3>Jeans</h3>
                 </a>
                 <a href="categories.html" class="category-card wow animate__animated animate__fadeInRight"
                    data-wow-delay="0.8s">
-                    <img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?w=400" alt="Accessories">
+                    <img src="images/categories/categories11.webp" alt="Accessories">
                     <h3>Accessories</h3>
                 </a>
             </div>
@@ -169,12 +177,19 @@
                 <div class="store-details wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
                     <h2>FashionFusion Store, NYC</h2>
                     <div class="address">
-                        <p>2118 Thornridge Cir. Syracuse,<br>Connecticut 35624</p>
+                        <p>
+                            <a href="https://maps.app.goo.gl/qw7S75VUXFA2scTb7"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                1300 N Main St, Los Angeles,<br>CA 90012, USA
+                            </a>
+                        </p>
                     </div>
                     <div class="contact-info">
-                        <p>info@fashionfusion.com</p>
-                        <p>+(313) 456-535-732</p>
+                        <p><a href="mailto:info@fashionfusion.com" target="_blank" rel="noopener noreferrer">info@fashionfusion.com</a></p>
+                        <p><a href="tel:+1 213-328-9019" target="_blank" rel="noopener noreferrer">+1 213-328-9019</a></p>
                     </div>
+
                     <a href="shop.html" class="visit-btn">
                         Visit Store
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -186,9 +201,9 @@
                     </a>
                 </div>
                 <div class="store-images wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
-                    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800"
+                    <img src="images/main.webp"
                          alt="Store interior - Clothing racks" class="store-image">
-                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800"
+                    <img src="images/main-two.webp"
                          alt="Store interior - Display area" class="store-image">
                 </div>
             </div>
@@ -209,7 +224,7 @@
                                 expectations, and the customer service was top-notch. I highly recommend them to anyone
                                 looking for reliability and style."</p>
                             <div class="reviewer">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100"
+                                <img src="images/reviews/reviews.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>Lisa Brown</h4>
@@ -228,7 +243,7 @@
                                 looking for, and the shipping was surprisingly quick. The only reason for 4 stars is
                                 that one item was slightly different from the picture, but still good quality."</p>
                             <div class="reviewer">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                                <img src="images/reviews/reviews2.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>John Davis</h4>
@@ -247,7 +262,7 @@
                                 incredibly comfortable. I've received so many compliments. The fabric quality is
                                 excellent, and it fits perfectly. Will definitely be ordering more!"</p>
                             <div class="reviewer">
-                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
+                                <img src="images/reviews/reviews3.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>Emma Wilson</h4>
@@ -266,7 +281,7 @@
                                 helpful. They guided me through the exchange process, which was smooth and hassle-free.
                                 The new size fits perfectly, and I'm very satisfied with my purchase."</p>
                             <div class="reviewer">
-                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100"
+                                <img src="images/reviews/reviews4.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>Michael Thompson</h4>
@@ -287,99 +302,84 @@
 
     <section class="faq" id="faq">
         <div class="container">
-            <h2 class="faq-title wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Frequently Asked
-                Questions</h2>
+            <h2 class="faq-title wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Frequently Asked Questions</h2>
             <div class="faq-list">
                 <div class="faq-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                     <button class="faq-question">
-                        <span>What platform should I use for my eCommerce store?</span>
-                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round" stroke-linejoin="round">
+                        <span>What are your shipping options and delivery times?</span>
+                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>There are several excellent platforms to choose from, including Shopify, WooCommerce, and
-                            BigCommerce. The best choice depends on your specific needs, technical expertise, and
-                            budget. Shopify is great for beginners, while WooCommerce offers more customization
-                            options.</p>
+                        <p>We offer standard shipping (5-7 business days), express shipping (2-3 business days), and next day delivery (order before 2 PM). Free standard shipping is available on orders over $100 within the continental United States. International shipping is available to select countries with varying rates and delivery times.</p>
                     </div>
                 </div>
 
                 <div class="faq-item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                     <button class="faq-question">
-                        <span>How do I drive traffic to my online store?</span>
-                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round" stroke-linejoin="round">
+                        <span>What is your return and exchange policy?</span>
+                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>You can drive traffic through various channels including SEO optimization, social media
-                            marketing, paid advertising (PPC), content marketing, email campaigns, and influencer
-                            partnerships. It's important to diversify your traffic sources and track which channels
-                            perform best for your store.</p>
+                        <p>We offer a 30-day return policy for most items. Products must be unworn, unwashed, and with all tags attached. For exchanges, please return the item for a refund and place a new order for the desired item. Some items like intimate apparel, swimwear, and sale items are non-returnable. Please check our full return policy for more details.</p>
                     </div>
                 </div>
 
                 <div class="faq-item wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                     <button class="faq-question">
-                        <span>How do I start an eCommerce business?</span>
-                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round" stroke-linejoin="round">
+                        <span>How can I track my order?</span>
+                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Start by researching your market, choosing your niche, and creating a business plan. Then
-                            select an eCommerce platform, set up your online store, source your products, establish
-                            shipping and payment methods, and develop your marketing strategy.</p>
+                        <p>Once your order has been shipped, you will receive a confirmation email with a tracking number. You can use this number to track your package on our website or the carrier's website. If you haven't received a tracking number within 48 hours of your order confirmation, please contact our customer support team.</p>
                     </div>
                 </div>
 
                 <div class="faq-item wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                     <button class="faq-question">
-                        <span>How do I handle shipping and fulfillment?</span>
-                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round" stroke-linejoin="round">
+                        <span>Do you offer size guides for your clothing?</span>
+                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>You can handle fulfillment in-house or partner with third-party logistics (3PL) providers.
-                            Consider factors like shipping costs, delivery times, packaging, and tracking. Many
-                            businesses start with in-house fulfillment and transition to 3PL as they grow.</p>
+                        <p>Yes, we provide detailed size guides for all our clothing items. You can find the size guide link on each product page. Our guides include measurements for different body parts to help you choose the best fit. If you're between sizes or need additional assistance, feel free to contact our customer support team for personalized recommendations.</p>
                     </div>
                 </div>
 
                 <div class="faq-item wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
                     <button class="faq-question">
-                        <span>How do I build trust with my customers?</span>
-                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round" stroke-linejoin="round">
+                        <span>How can I stay updated on new arrivals and promotions?</span>
+                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Build trust through transparent business practices, clear policies, secure checkout, quality
-                            customer service, and authentic customer reviews. Display trust badges, provide detailed
-                            product information, and maintain consistent communication throughout the purchase
-                            journey.</p>
+                        <p>The best way to stay informed about our latest collections and exclusive offers is to subscribe to our newsletter. You can sign up at the bottom of our homepage. Additionally, follow us on social media platforms like Instagram, Facebook, and Twitter for real-time updates, styling tips, and special promotions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+        <button id="accept-cookies" class="btn btn-cookie">Accept</button>
+        <button id="reject-cookies" class="btn btn-cookie-reject">Decline</button>
+    </div>
+
 
 </main>
 
@@ -394,7 +394,7 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
@@ -415,9 +415,9 @@
                     Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
                     tips.
                 </p>
-                <form class="newsletter-form" id="newsletter-form">
+                <form class="newsletter-form" id="newsletter-form" action="thanks_form.php" method="post">
                     <div class="input-group">
-                        <input type="email" placeholder="Email address" required>
+                        <input type="email" name="email" placeholder="Email address" required>
                         <button type="submit" class="submit-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -431,7 +431,6 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 FashionFusion. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-facebook"></i></a>
@@ -445,6 +444,7 @@
                 <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-linkedin"></i></a>
             </div>
+            <p>© 2025 FashionFusion. All rights reserved.</p>
         </div>
     </div>
 </footer>

@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Find out about FashionFusion's shipping methods, delivery times, and costs. We offer free shipping on orders over $100 and ship to select international locations.">
+    <link rel="icon" type="image/webp" href="images/fav.webp">
     <title>Shipping Policy - FashionFusion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="header-content">
             <a href="index.html" class="logo">FashionFusion</a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="auth.html" class="account-btn"><i class="fas fa-user"></i></a>
+                <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
+                <span id="user-name"></span>
+                <button id="logout-button" style="display: none;">Exit</button>
                 <button class="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
@@ -62,7 +71,7 @@
             <p>Once your order has been shipped, you will receive a confirmation email with a tracking number.</p>
 
             <h2>7. Delivery Issues</h2>
-            <p>If you experience any issues with your delivery, please contact our customer support team at support@fashionfusion.com.</p>
+            <p>If you experience any issues with your delivery, please contact our customer support team at info@fashionfusion.com.</p>
         </div>
     </div>
 </main>
@@ -76,7 +85,7 @@
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
                 </ul>
@@ -94,13 +103,16 @@
             <div class="footer-section newsletter">
                 <h2>10% OFF YOUR FIRST PURCHASE</h2>
                 <p class="newsletter-description">
-                    Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion tips.
+                    Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
+                    tips.
                 </p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" id="newsletter-form" action="thanks_form.php" method="post">
                     <div class="input-group">
-                        <input type="email" placeholder="Email address" required>
+                        <input type="email" name="email" placeholder="Email address" required>
                         <button type="submit" class="submit-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
@@ -110,18 +122,31 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 FashionFusion. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-facebook"></i></a>
                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
             </div>
+            <p>© 2025 FashionFusion. All rights reserved.</p>
         </div>
     </div>
 </footer>
+<section id="subscription-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Thank You for Subscribing!</h3>
+        <p>We appreciate your interest in FashionFusion. You'll now receive our latest updates and exclusive offers.</p>
+        <button id="subscription-popup-ok" class="popup-ok-btn">OK</button>
+    </div>
+</section>
 </body>
 </html>
 

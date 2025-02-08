@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop the latest fashion trends at FashionFusion. Browse our collection of shirts, hoodies, sweatshirts, and more with great deals and discounts.">
+    <meta name="description"
+          content="Learn about FashionFusion's story, our dedicated team, and our commitment to creating meticulously handcrafted fashion pieces.">
     <link rel="icon" type="image/webp" href="images/fav.webp">
-    <title>Shop - FashionFusion</title>
+    <title>About Us - FashionFusion</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/main.js" defer></script>
+
 </head>
 <body>
 <header class="header">
@@ -45,25 +47,83 @@
     </div>
 </header>
 
-<main class="shop-page">
-    <div class="container">
-        <div class="shop-header">
-            <h1>Latest Products</h1>
-            <div class="custom-select" id="category-filter">
-                <div class="select-selected">All Categories</div>
-                <div class="select-items select-hide">
-                    <div data-value="all">All Categories</div>
-                    <div data-value="shirts">Shirts</div>
-                    <div data-value="hoodies">Hoodies</div>
+<main class="about-page">
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image wow animate__animated animate__fadeInLeft">
+                    <img src="images/about/about.webp" alt="Colorful clothes on wooden hangers">
+                </div>
+                <div class="hero-text wow animate__animated animate__fadeInRight">
+                    <h1>Every item is meticulously made by hand and has a distinct design</h1>
+                    <p>Our mission at FashionFusion is to redefine what it means to wear modern fashion. We aim to craft
+                        stylish, durable pieces that make a lasting impression while minimizing environmental
+                        impact.</p>
+                    <a href="shop.html" class="btn-primary">Explore All <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="products-grid shop-grid" id="products-grid">
-            <!-- Products will be dynamically loaded here -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member wow animate__animated animate__fadeInUp">
+                    <img src="images/about/about2.webp" alt="Cody Fisher">
+                    <h3>Cody Fisher</h3>
+                    <p>Web Designer</p>
+                </div>
+                <div class="team-member wow animate__animated animate__fadeInUp">
+                    <img src="images/about/about3.webp" alt="Cameron Williamson">
+                    <h3>Cameron Williamson</h3>
+                    <p>Senior Designer</p>
+                </div>
+                <div class="team-member wow animate__animated animate__fadeInUp">
+                    <img src="images/about/about4.webp" alt="Robert Fox">
+                    <h3>Robert Fox</h3>
+                    <p>President of Sales</p>
+                </div>
+                <div class="team-member wow animate__animated animate__fadeInUp">
+                    <img src="images/about/about5.webp" alt="Annette Black">
+                    <h3>Annette Black</h3>
+                    <p>Creative Designer</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <section class="story-section">
+        <div class="container">
+            <h2>About Our Story</h2>
+            <div class="story-grid">
+                <div class="story-image wow animate__animated animate__fadeInLeft">
+                    <img src="images/about/about6.webp" alt="Red and white striped clothing on hangers">
+                </div>
+                <div class="story-text wow animate__animated animate__fadeInRight">
+                    <p>Explore our collection and find clothes that speaks to you</p>
+                    <h3>The journey behind FashionFusion's evolution in modern fashion</h3>
+                </div>
+            </div>
+
+            <div class="story-content">
+                <div class="content-block">
+                    <div class="text-content wow animate__animated animate__fadeInLeft">
+                        <h3>With our chic textile lines, discover modern elegance</h3>
+                        <p>At FashionFusion, we believe that fashion is more than just clothing—it's a way to express
+                            individuality and connect with the world. Founded with a vision to create timeless,
+                            high-quality pieces, FashionFusion has evolved into a brand known for craftsmanship.</p>
+                        <p>From our humble beginnings to becoming a leading name in modern fashion, our journey has been
+                            driven by a passion for creating clothing.</p>
+                        <a href="shop.html" class="btn-primary">Explore All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="image-content wow animate__animated animate__fadeInRight">
+                        <img src="images/about/about7.webp" alt="Colorful knitted clothing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="store-location">
         <div class="container">
@@ -80,8 +140,10 @@
                         </p>
                     </div>
                     <div class="contact-info">
-                        <p><a href="mailto:info@fashionfusion.com" target="_blank" rel="noopener noreferrer">info@fashionfusion.com</a></p>
-                        <p><a href="tel:+1 213-328-9019" target="_blank" rel="noopener noreferrer">+1 213-328-9019</a></p>
+                        <p><a href="mailto:info@fashionfusion.com" target="_blank" rel="noopener noreferrer">info@fashionfusion.com</a>
+                        </p>
+                        <p><a href="tel:+1 213-328-9019" target="_blank" rel="noopener noreferrer">+1 213-328-9019</a>
+                        </p>
                     </div>
 
                     <a href="shop.html" class="visit-btn">
@@ -175,25 +237,15 @@
     </div>
 </footer>
 
-<section id="product-popup" class="popup">
-    <div class="popup-content">
-        <span class="close-popup">&times;</span>
-        <img id="popup-image" src="/placeholder.svg" alt="Product Image" class="popup-image">
-        <h3 id="popup-title" class="popup-title"></h3>
-        <p id="popup-price" class="popup-price"></p>
-        <button id="popup-add-to-cart" class="add-to-cart">Add to Cart</button>
-    </div>
-</section>
 
-<section id="subscription-popup" class="popup">
+<div id="subscription-popup" class="popup">
     <div class="popup-content">
         <span class="close-popup">&times;</span>
         <h3>Thank You for Subscribing!</h3>
         <p>We appreciate your interest in FashionFusion. You'll now receive our latest updates and exclusive offers.</p>
         <button id="subscription-popup-ok" class="popup-ok-btn">OK</button>
     </div>
-</section>
-
+</div>
 
 </body>
 </html>
