@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Обработчики событий
     if (newsletterForm) {
         newsletterForm.addEventListener("submit", function (e) {
-            e.preventDefault()
+            e.preventDefault();
             const email = this.querySelector('input[type="email"]').value;
             console.log("Subscribing email:", email);
             this.reset();
