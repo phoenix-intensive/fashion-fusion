@@ -2119,7 +2119,12 @@ input {
     }
 }
 
-/* Existing styles... */
+
+.error,
+.hidden {
+    color: red;
+}
+
 
 
 
