@@ -1367,12 +1367,13 @@ a {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
-    background-color: #333; /* Added background color */
-    color: #fff; /* Added text color */
-    border: none; /* Removed border */
-    border-radius: 4px; /* Added border radius */
-    cursor: pointer; /* Added cursor style */
-    transition: background-color 0.3s ease; /* Added transition */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
 }
 
 .add-to-cart:hover {
@@ -1963,6 +1964,164 @@ a {
     }
 
 }
+
+.payment-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container p {
+    margin-bottom: 30px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pay-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Existing styles... */
+
+/* Payment Methods Section */
+.payment-methods {
+    text-align: right;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.payment-methods h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: right;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.payment-icons i {
+    font-size: 2rem;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.payment-icons i:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .payment-icons {
+        gap: 1rem;
+    }
+
+    .payment-icons i {
+        font-size: 1.75rem;
+    }
+}
+
+/* Existing styles... */
+
+
 
 
 

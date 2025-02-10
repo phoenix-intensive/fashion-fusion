@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupTitle = document.getElementById("popup-title");
     const popupPrice = document.getElementById("popup-price");
     const popupAddToCart = document.getElementById("popup-add-to-cart");
+    const popupPay = document.getElementById("popup-pay-to-cart");
     const cartCount = document.querySelector(".cart-count");
     const productsGrid = document.querySelector(".products-grid");
     const categoriesGrid = document.querySelector(".categories-grid");
@@ -47,12 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 name: "Abstract Print T-shirt",
-                price: 946.98,
+                price: 94.98,
                 image: "./images/shirt/shirt3.webp"
             },
             {
                 name: "Shirt Fashion Casual",
-                price: 890.98,
+                price: 89.98,
                 image: "./images/shirt/shirt4.webp"
             },
             {
@@ -84,12 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 name: "Patchwork Hoodies",
-                price: 430.0,
+                price: 43.0,
                 image: "./images/hoodies/hoodies2.webp"
             },
             {
                 name: "Cardigan Hoodies",
-                price: 535.98,
+                price: 53.98,
                 image: "./images/hoodies/hoodies3.webp",
                 discount: 15
             },
@@ -235,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Обработчики событий
     if (newsletterForm) {
         newsletterForm.addEventListener("submit", function (e) {
-            e.preventDefault(); // Останавливаем стандартное поведение формы
+            e.preventDefault()
             const email = this.querySelector('input[type="email"]').value;
             console.log("Subscribing email:", email);
             this.reset();
@@ -253,11 +254,22 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target == popup) closePopupFunc();
     };
 
+
+
     if (closePopup) closePopup.onclick = closePopupFunc;
     if (popupAddToCart) popupAddToCart.onclick = () => {
         addToCart();
         closePopupFunc();
     };
+
+
+    if (popupPay) popupPay.onclick = () => {
+        window.location.href = 'payment.html';
+        closePopupFunc();
+    };
+
+
+
 
     if (customSelect) {
         selectSelected.addEventListener("click", function (e) {
