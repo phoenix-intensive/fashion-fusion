@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find out about FashionFusion's shipping methods, delivery times, and costs. We offer free shipping on orders over $100 and ship to select international locations.">
-    <link rel="icon" type="image/webp" href="images/fav.webp">
-    <title>Shipping Policy - FashionFusion</title>
+    <meta name="description" content="Contact FashionFusion for any inquiries or support. We're here to help with your fashion needs.">
+    <title>Contact Us - FashionFusion</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <header class="header">
@@ -44,37 +42,35 @@
     </div>
 </header>
 
-<main class="policy-page">
+<main class="contact-page">
     <div class="container">
-        <h1 class="policy-title">Shipping Policy</h1>
-        <div class="policy-content">
-            <h2>1. Processing Time</h2>
-            <p>Orders are typically processed within 1-2 business days after payment confirmation.</p>
-
-            <h2>2. Shipping Methods</h2>
-            <p>We offer the following shipping methods:</p>
-            <ul>
-                <li>Standard Shipping (5-7 business days)</li>
-                <li>Express Shipping (2-3 business days)</li>
-                <li>Next Day Delivery (1 business day, order before 2 PM)</li>
-            </ul>
-
-            <h2>3. Shipping Costs</h2>
-            <p>Shipping costs are calculated based on the weight of your order and your location. You can view the shipping cost at checkout before completing your purchase.</p>
-
-            <h2>4. Free Shipping</h2>
-            <p>We offer free standard shipping on orders over $100 within the continental United States.</p>
-
-            <h2>5. International Shipping</h2>
-            <p>We currently ship to select countries. International shipping rates and delivery times vary by location.</p>
-
-            <h2>6. Tracking Your Order</h2>
-            <p>Once your order has been shipped, you will receive a confirmation email with a tracking number.</p>
-
-            <h2>7. Delivery Issues</h2>
-            <p>If you experience any issues with your delivery, please contact our customer support team at fashionfusionez@outlook.com
-
-.</p>
+        <h1 class="page-title">Contact Us</h1>
+        <div class="contact-content">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contact-form" action="thanks_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>FashionFusion Store, NYC</strong></p>
+                <p><i class="fas fa-map-marker-alt"></i> 91 King William St. Adelaide, SA 5000 Australia</p>
+                <p><i class="fas fa-envelope"></i> fashionfusionez@outlook.com</p>
+                <p><i class="fas fa-phone"></i> +0422 231 664</p>
+            </div>
         </div>
     </div>
 </main>
@@ -146,14 +142,7 @@
         </div>
     </div>
 </footer>
-<section id="subscription-popup" class="popup">
-    <div class="popup-content">
-        <span class="close-popup">&times;</span>
-        <h3>Thank You for Subscribing!</h3>
-        <p>We appreciate your interest in FashionFusion. You'll now receive our latest updates and exclusive offers.</p>
-        <button id="subscription-popup-ok" class="popup-ok-btn">OK</button>
-    </div>
-</section>
+
+
 </body>
 </html>
-
