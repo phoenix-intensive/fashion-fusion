@@ -2040,9 +2040,11 @@ a {
 }
 
 
+.payment-container p {
+    margin-bottom: 1rem;
+}
 
 
-/* Existing styles... */
 
 /* Contact Information Styles */
 .contact-info {
