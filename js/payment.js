@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000)
 
     paymentForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+
         // Create and show the overlay with loader
         const overlay = document.createElement("div")
         overlay.className = "overlay"
