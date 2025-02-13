@@ -224,12 +224,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (limit) productsToShow = productsToShow.slice(0, limit);
 
+        // Получаем текущий путь, чтобы понять, где мы находимся
+        const currentPath = window.location.pathname;
+
+// Если мы находимся в папке src/pages (например, на странице shop.html), убираем лишний префикс src/pages
+        const basePath = currentPath.includes("/fashion-fusion/src/pages/") ? "" : "/fashion-fusion/src/pages/";
+
         productsToShow.forEach((product) => {
             const productCard = document.createElement("div");
             productCard.className = "product-card";
             productCard.innerHTML = `
             ${product.discount ? `<div class="product-badge">${product.discount}% Off</div>` : ""}
-            <a href="product.html?id=${product.id}" class="product-link">
+            <a href="${basePath}product.html?id=${product.id}" class="product-link">
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <h3 class="product-title">${product.name}</h3>
             <p class="product-price">$ ${product.price.toFixed(2)} USD</p>
