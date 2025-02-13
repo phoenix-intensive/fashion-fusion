@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop the latest fashion trends at FashionFusion. Browse our collection of shirts, hoodies, sweatshirts, and more with great deals and discounts.">
-    <link rel="icon" type="image/webp" href="images/fav.webp">
-    <title>Shop - FashionFusion</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="description" content="Browse our wide range of fashion categories at FashionFusion. Find jackets, shirts, hoodies, and more in our curated collection.">
+    <link rel="icon" type="image/webp" href="../../images/fav.webp">
+    <title>Categories - FashionFusion</title>
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/main.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/cart-utils.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -26,83 +25,106 @@
                 <ul>
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="categories.html">Categories</a></li>
+
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
                 <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
                 <span id="user-name"></span>
                 <button id="logout-button" style="display: none;">Exit</button>
-                <button class="cart-btn">
+                <a href="cart.html" class="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
 </header>
 
-<main class="shop-page">
+<main class="categories-page">
     <div class="container">
-        <div class="shop-header">
-            <h1>Latest Products</h1>
-            <div class="custom-select" id="category-filter">
+        <div class="categories-header">
+            <h1>Our Categories</h1>
+            <div class="custom-select">
                 <div class="select-selected">All Categories</div>
                 <div class="select-items select-hide">
                     <div data-value="all">All Categories</div>
+                    <div data-value="jackets">Jackets</div>
                     <div data-value="shirts">Shirts</div>
-                    <div data-value="hoodies">Hoodies</div>
                 </div>
             </div>
         </div>
 
-        <div class="products-grid shop-grid" id="products-grid">
-            <!-- Products will be dynamically loaded here -->
+        <div class="categories-grid" id="categories-grid">
+            <!-- Jackets Category -->
+            <div class="category-card" data-category="jackets">
+                <img src="../../images/categories/categories.webp" alt="Denim Jacket" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Denim Jacket</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="shirts">
+                <img src="../../images/categories/categories2.webp" alt="Long sleeve shirt" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Long sleeve shirt</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="jackets">
+                <img src="../../images/categories/categories3.webp" alt="Motorcycle Jacket" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Motorcycle Jacket</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="shirts">
+                <img src="../../images/categories/categories4.webp" alt="Sleeve polo shirt" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Sleeve polo shirt</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="jackets">
+                <img src="../../images/categories/categories5.webp" alt="American Style Hoodie" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">American Style Hoodie</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="jackets">
+                <img src="../../images/categories/categories6.webp" alt="Baseball Jacket" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Baseball Jacket</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="jackets">
+                <img src="../../images/categories/categories7.webp" alt="Leather Jacket" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Leather Jacket</h2>
+           
+                </div>
+            </div>
+
+            <div class="category-card" data-category="shirts">
+                <img src="../../images/categories/categories8.webp" alt="Football T-Shirt" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-title">Football T-Shirt</h2>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    <section class="store-location">
-        <div class="container">
-            <div class="store-info">
-                <div class="store-details wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
-                    <h2>FashionFusion Store, NYC</h2>
-                    <div class="address">
-                        <p>
-                            <a href="https://maps.app.goo.gl/qw7S75VUXFA2scTb7"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                1300 N Main St, Los Angeles,<br>CA 90012, USA
-                            </a>
-                        </p>
-                    </div>
-                    <div class="contact-info">
-                        <p><a href="mailto:info@fashionfusion.com" target="_blank" rel="noopener noreferrer">info@fashionfusion.com</a></p>
-                        <p><a href="tel:+1 213-328-9019" target="_blank" rel="noopener noreferrer">+1 213-328-9019</a></p>
-                    </div>
-
-                    <a href="shop.html" class="visit-btn">
-                        Visit Store
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="arrow-icon">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-                <div class="store-images wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
-                    <img src="images/main.webp"
-                         alt="Store interior - Clothing racks" class="store-image">
-                    <img src="images/main-two.webp"
-                         alt="Store interior - Display area" class="store-image">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div id="cookie-banner" class="cookie-banner">
         <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
@@ -119,10 +141,11 @@
                 <ul>
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="categories.html">Categories</a></li>
+
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -141,7 +164,7 @@
                     Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
                     tips.
                 </p>
-                <form class="newsletter-form" id="newsletter-form" action="thanks_form.php" method="post">
+                <form class="newsletter-form" id="newsletter-form" action="../../thanks_form.php" method="post">
                     <div class="input-group">
                         <input type="email" name="email" placeholder="Email address" required>
                         <button type="submit" class="submit-btn">
@@ -174,34 +197,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-tiktok"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-linkedin"></i></a>
-            </div>
             <p>© 2025 FashionFusion. All rights reserved.</p>
         </div>
     </div>
 </footer>
-
-<section id="product-popup" class="popup">
-    <div class="popup-content">
-        <span class="close-popup">&times;</span>
-        <img id="popup-image" src="/placeholder.svg" alt="Product Image" class="popup-image">
-        <h3 id="popup-title" class="popup-title"></h3>
-        <p id="popup-price" class="popup-price"></p>
-        <button id="popup-add-to-cart" class="add-to-cart">Add to Cart</button>
-        <button id="popup-pay-to-cart" class="add-to-cart">Buy</button>
-    </div>
-</section>
 
 <section id="subscription-popup" class="popup">
     <div class="popup-content">
@@ -211,8 +210,6 @@
         <button id="subscription-popup-ok" class="popup-ok-btn">OK</button>
     </div>
 </section>
-
-
 </body>
 </html>
 

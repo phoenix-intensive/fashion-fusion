@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment - FashionFusion</title>
-    <link rel="icon" type="image/webp" href="images/fav.webp">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/webp" href="../../images/fav.webp">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/payment.js" defer></script>
+    <script src="../../js/payment.js" defer></script>
 </head>
 <body>
 <div class="payment-container">
     <div id="loader" class="loader">
         <div class="spinner"></div>
     </div>
-    <form id="payment-form" class="payment-form hidden" action="process_payment.php" method="POST">
+    <form id="payment-form" class="payment-form hidden" action="../../process_payment.php" method="POST">
         <h2>Payment Details</h2>
         <div class="form-group">
             <label for="card-number">Card number</label>
@@ -39,6 +39,7 @@
             <input type="text" id="cardholder-name" placeholder="John Doe" required>
         </div>
         <button type="submit" class="pay-button">Pay Now</button>
+        <a href="index.html" class="pay-button">Home</a>
     </form>
 </div>
 

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Review FashionFusion's terms and conditions for information on using our website, making purchases, and understanding your rights as a customer.">
-    <link rel="icon" type="image/webp" href="images/fav.webp">
-    <title>Terms and Conditions - FashionFusion</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Learn about FashionFusion's secure payment options and policies. We accept credit cards, PayPal, and more to ensure a safe and convenient shopping experience.">
+    <link rel="icon" type="image/webp" href="../../images/fav.webp">
+    <title>Payment Policy - FashionFusion</title>
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="js/main.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/cart-utils.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -24,20 +25,21 @@
                 <ul>
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="categories.html">Categories</a></li>
+
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
                 <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
                 <span id="user-name"></span>
                 <button id="logout-button" style="display: none;">Exit</button>
-                <button class="cart-btn">
+                <a href="cart.html" class="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -45,28 +47,31 @@
 
 <main class="policy-page">
     <div class="container">
-        <h1 class="policy-title">Terms and Conditions</h1>
+        <h1 class="policy-title">Payment Policy</h1>
         <div class="policy-content">
-            <h2>1. Acceptance of Terms</h2>
-            <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p>
+            <h2>1. Accepted Payment Methods</h2>
+            <p>We accept the following payment methods:</p>
+            <ul>
+                <li>Credit Cards (Visa, MasterCard, American Express)</li>
+                <li>PayPal</li>
+                <li>Apple Pay</li>
+                <li>Google Pay</li>
+            </ul>
 
-            <h2>2. Use License</h2>
-            <p>Permission is granted to temporarily download one copy of the materials on FashionFusion's website for personal, non-commercial transitory viewing only.</p>
+            <h2>2. Payment Security</h2>
+            <p>All payments are processed securely through encrypted SSL technology. We do not store your full credit card details on our servers.</p>
 
-            <h2>3. Disclaimer</h2>
-            <p>The materials on FashionFusion's website are provided on an 'as is' basis. FashionFusion makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+            <h2>3. Payment Timing</h2>
+            <p>Your payment will be processed immediately upon placing your order.</p>
 
-            <h2>4. Limitations</h2>
-            <p>In no event shall FashionFusion or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on FashionFusion's website.</p>
+            <h2>4. Currency</h2>
+            <p>All prices are listed and charged in USD.</p>
 
-            <h2>5. Revisions and Errata</h2>
-            <p>The materials appearing on FashionFusion's website could include technical, typographical, or photographic errors. FashionFusion does not warrant that any of the materials on its website are accurate, complete or current.</p>
+            <h2>5. Taxes</h2>
+            <p>Applicable taxes will be calculated and added to your total at checkout based on your shipping address.</p>
 
-            <h2>6. Links</h2>
-            <p>FashionFusion has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by FashionFusion of the site. Use of any such linked website is at the user's own risk.</p>
-
-            <h2>7. Governing Law</h2>
-            <p>These terms and conditions are governed by and construed in accordance with the laws of USA and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+            <h2>6. Payment Issues</h2>
+            <p>If you experience any issues with payment, please contact our customer support team at info@fashionfusion.com.</p>
         </div>
     </div>
 </main>
@@ -79,10 +84,11 @@
                 <ul>
                     <li><a href="index.html#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="categories.html">Categories</a></li>
+
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html#reviews">Reviews</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -101,7 +107,7 @@
                     Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
                     tips.
                 </p>
-                <form class="newsletter-form" id="newsletter-form" action="thanks_form.php" method="post">
+                <form class="newsletter-form" id="newsletter-form" action="../../thanks_form.php" method="post">
                     <div class="input-group">
                         <input type="email" name="email" placeholder="Email address" required>
                         <button type="submit" class="submit-btn">
@@ -134,23 +140,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-tiktok"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-linkedin"></i></a>
-            </div>
             <p>© 2025 FashionFusion. All rights reserved.</p>
         </div>
     </div>
 </footer>
+
 <section id="subscription-popup" class="popup">
     <div class="popup-content">
         <span class="close-popup">&times;</span>

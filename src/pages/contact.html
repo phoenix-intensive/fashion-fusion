@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact FashionFusion for any inquiries or support. We're here to help with your fashion needs.">
+    <link rel="icon" type="image/webp" href="../../images/fav.webp">
+    <title>Contact Us - FashionFusion</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../../js/cart-utils.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo">FashionFusion</a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#reviews">Reviews</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
+                <span id="user-name"></span>
+                <button id="logout-button" style="display: none;">Exit</button>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="contact-page">
+    <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        <div class="contact-content">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contact-form" action="../../thanks_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>FashionFusion Store, NYC</strong></p>
+                <p><i class="fas fa-map-marker-alt"></i> 91 King William St. Adelaide, SA 5000 Australia</p>
+                <p><i class="fas fa-envelope"></i> fashionfusionez@outlook.com</p>
+                <p><i class="fas fa-phone"></i> +0422 231 664</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PAGES</h3>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#reviews">Reviews</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="payment-policy.html">Payment Policy</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                    <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                    <li><a href="refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>10% OFF YOUR FIRST PURCHASE</h2>
+                <p class="newsletter-description">
+                    Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
+                    tips.
+                </p>
+                <form class="newsletter-form" id="newsletter-form" action="../../thanks_form.php" method="post">
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <button type="submit" class="submit-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bank-info">
+            <h3>BANK DETAILS</h3>
+            <div class="bank-details">
+                <div class="detail-item">
+                    <span class="detail-label">Recipient: </span>
+                    <span class="detail-value">FashionFusion</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Account number: </span>
+                    <span class="detail-value">4200012345</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">BSB code: </span>
+                    <span class="detail-value">033-547</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 FashionFusion. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

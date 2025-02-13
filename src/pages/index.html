@@ -6,12 +6,14 @@
     <title>FashionFusion - Modern Fashion Store</title>
     <meta name="description"
           content="Discover the latest fashion trends at FashionFusion. Shop stylish clothing, accessories, and more for men and women.">
-    <link rel="icon" type="image/webp" href="images/fav.webp">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/webp" href="../../images/fav.webp">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/main.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/cart-utils.js" defer></script>
+
 </head>
 <body>
 
@@ -37,20 +39,20 @@
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="categories.html">Categories</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
                 <a href="auth.html" class="account-btn"><i id="user-icon" class="fas fa-user"></i></a>
                 <span id="user-name"></span>
                 <button id="logout-button" style="display: none;">Exit</button>
-                <button class="cart-btn">
+                <a href="cart.html" class="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -80,67 +82,11 @@
         <div class="container">
             <h2 class="wow animate__animated animate__fadeInUp">Best Sellers</h2>
             <div class="products-grid">
-                <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                    <div class="product-badge">30% OFF</div>
-                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400" alt="Casual Shirts">
-                    <h3>Sleeve Casual Shirts</h3>
-                    <p class="price">$54.00 USD</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-                    <div class="product-badge">New</div>
-                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400" alt="Leather Jacket">
-                    <h3>Classic Leather Jacket</h3>
-                    <p class="price">$120.00 USD</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-                    <div class="product-badge">Best Seller</div>
-                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" alt="Slim Fit Jeans">
-                    <h3>Slim Fit Jeans</h3>
-                    <p class="price">$75.00 USD</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-                    <div class="product-badge">Sale</div>
-                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400" alt="Summer Dress">
-                    <h3>Floral Summer Dress</h3>
-                    <p class="price">$65.00 USD</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <!-- Products will be dynamically loaded here -->
             </div>
         </div>
     </section>
 
-
-    <!-- Categories -->
-    <section class="categories">
-        <div class="container">
-            <h2 class="wow animate__animated animate__fadeInUp">Our Categories</h2>
-            <div class="categories-grid">
-                <a href="categories.html" class="category-card wow animate__animated animate__fadeInLeft"
-                   data-wow-delay="0.2s">
-                    <img src="images/categories/categories.webp" alt="Denim Jacket">
-                    <h3>Denim Jacket</h3>
-                </a>
-                <a href="categories.html" class="category-card wow animate__animated animate__fadeInLeft"
-                   data-wow-delay="0.4s">
-                    <img src="images/categories/categories9.webp" alt="Summer Dresses">
-                    <h3>Summer Dresses</h3>
-                </a>
-                <a href="categories.html" class="category-card wow animate__animated animate__fadeInRight"
-                   data-wow-delay="0.6s">
-                    <img src="images/categories/categories10.webp" alt="Jeans">
-                    <h3>Jeans</h3>
-                </a>
-                <a href="categories.html" class="category-card wow animate__animated animate__fadeInRight"
-                   data-wow-delay="0.8s">
-                    <img src="images/categories/categories11.webp" alt="Accessories">
-                    <h3>Accessories</h3>
-                </a>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Features -->
@@ -201,9 +147,9 @@
                     </a>
                 </div>
                 <div class="store-images wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
-                    <img src="images/main.webp"
+                    <img src="../../images/main.webp"
                          alt="Store interior - Clothing racks" class="store-image">
-                    <img src="images/main-two.webp"
+                    <img src="../../images/main-two.webp"
                          alt="Store interior - Display area" class="store-image">
                 </div>
             </div>
@@ -224,7 +170,7 @@
                                 expectations, and the customer service was top-notch. I highly recommend them to anyone
                                 looking for reliability and style."</p>
                             <div class="reviewer">
-                                <img src="images/reviews/reviews.webp"
+                                <img src="../../images/reviews/reviews.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>Lisa Brown</h4>
@@ -243,7 +189,7 @@
                                 looking for, and the shipping was surprisingly quick. The only reason for 4 stars is
                                 that one item was slightly different from the picture, but still good quality."</p>
                             <div class="reviewer">
-                                <img src="images/reviews/reviews2.webp"
+                                <img src="../../images/reviews/reviews2.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>John Davis</h4>
@@ -262,7 +208,7 @@
                                 incredibly comfortable. I've received so many compliments. The fabric quality is
                                 excellent, and it fits perfectly. Will definitely be ordering more!"</p>
                             <div class="reviewer">
-                                <img src="images/reviews/reviews3.webp"
+                                <img src="../../images/reviews/reviews3.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>Emma Wilson</h4>
@@ -281,7 +227,7 @@
                                 helpful. They guided me through the exchange process, which was smooth and hassle-free.
                                 The new size fits perfectly, and I'm very satisfied with my purchase."</p>
                             <div class="reviewer">
-                                <img src="images/reviews/reviews4.webp"
+                                <img src="../../images/reviews/reviews4.webp"
                                      alt="Reviewer">
                                 <div class="reviewer-info">
                                     <h4>Michael Thompson</h4>
@@ -419,10 +365,10 @@
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="categories.html">Categories</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -441,7 +387,7 @@
                     Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion
                     tips.
                 </p>
-                <form class="newsletter-form" id="newsletter-form" action="thanks_form.php" method="post">
+                <form class="newsletter-form" id="newsletter-form" action="../../thanks_form.php" method="post">
                     <div class="input-group">
                         <input type="email" name="email" placeholder="Email address" required>
                         <button type="submit" class="submit-btn">
@@ -474,19 +420,6 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-tiktok"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-linkedin"></i></a>
-            </div>
             <p>© 2025 FashionFusion. All rights reserved.</p>
         </div>
     </div>
@@ -497,10 +430,8 @@
     <div class="popup-content">
         <span class="close-popup">&times;</span>
         <img id="popup-image" src="/placeholder.svg" alt="Product Image" class="popup-image">
-        <h3 id="popup-title" class="popup-title"></h3>
-        <p id="popup-price" class="popup-price"></p>
-        <button id="popup-add-to-cart" class="add-to-cart">Add to Cart</button>
-        <button id="popup-pay-to-cart" class="add-to-cart">Buy</button>
+        <h2 id="popup-title" class="popup-title"></h2>
+        <h3 id="popup-price">Item successfully added to cart</h3>
     </div>
 </section>
 
