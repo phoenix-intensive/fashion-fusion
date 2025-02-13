@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 id: "shirt1",
                 name: "Sleeve Casual Shirts",
                 price: 54.0,
-                image: "/fashion-fusion/images/shirt/shirt.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt.webp",
                 discount: 30,
                 description: "A stylish and comfortable casual shirt made from breathable cotton fabric, perfect for everyday wear. The modern cut and classic design make it a versatile addition to your wardrobe. Pair it with jeans or chinos for a polished look."
             },
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 id: "shirt2",
                 name: "Sleeve Linen Shirt",
                 price: 56.7,
-                image: "/fashion-fusion/images/shirt/shirt2.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt2.webp",
                 discount: 20,
                 description: "This lightweight linen shirt is ideal for warm weather, offering excellent breathability and a relaxed fit. The natural fabric ensures comfort, while the minimalistic design adds elegance to casual and semi-formal outfits."
             },
@@ -54,42 +54,42 @@ document.addEventListener("DOMContentLoaded", () => {
                 id: "shirt3",
                 name: "Abstract Print T-shirt",
                 price: 94.98,
-                image: "/fashion-fusion/images/shirt/shirt3.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt3.webp",
                 description: "Stand out from the crowd with this unique abstract print T-shirt. Designed with premium quality fabric, it offers both durability and a bold artistic statement. Perfect for creative individuals looking to express their personality."
             },
             {
                 id: "shirt4",
                 name: "Shirt Fashion Casual",
                 price: 89.98,
-                image: "/fashion-fusion/images/shirt/shirt4.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt4.webp",
                 description: "A fashionable casual shirt with a sleek design and modern fit. The soft fabric and subtle details make it suitable for both work and leisure. Enhance your wardrobe with this versatile piece."
             },
             {
                 id: "shirt5",
                 name: "Hawaiian Shirts",
                 price: 21.7,
-                image: "/fashion-fusion/images/shirt/shirt5.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt5.webp",
                 description: "Bring a touch of the tropics to your outfit with this vibrant Hawaiian shirt. Featuring colorful floral prints and lightweight material, it's perfect for summer parties, beach trips, or casual weekends."
             },
             {
                 id: "shirt6",
                 name: "Denim Shirt",
                 price: 75.0,
-                image: "/fashion-fusion/images/shirt/shirt6.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt6.webp",
                 description: "This classic denim shirt combines rugged durability with timeless style. Whether worn as a standalone piece or layered over a T-shirt, it's a must-have for casual and urban looks."
             },
             {
                 id: "shirt7",
                 name: "Printed Shirt",
                 price: 48.9,
-                image: "/fashion-fusion/images/shirt/shirt7.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt7.webp",
                 description: "A lightweight printed shirt featuring eye-catching designs. Its breathable fabric and relaxed fit make it perfect for casual gatherings or vacations. Stand out in style wherever you go."
             },
             {
                 id: "shirt8",
                 name: "Oxford Shirt",
                 price: 65.0,
-                image: "/fashion-fusion/images/shirt/shirt8.webp",
+                image: "/fashion-fusion/src/assets/images/shirt/shirt8.webp",
                 description: "An elegant Oxford shirt crafted from high-quality fabric for a timeless look. Perfect for professional settings or upscale casual events. Its crisp design and comfortable fit make it a wardrobe essential."
             },
         ],
@@ -98,21 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 id: "hoodie1",
                 name: "Embroidered Sweatshirt",
                 price: 107.98,
-                image: "/fashion-fusion/images/hoodies/hoodies.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies.webp",
                 description: "A cozy and stylish sweatshirt featuring intricate embroidery details. Made with soft fleece lining for maximum comfort, this piece is ideal for chilly evenings or relaxed weekends."
             },
             {
                 id: "hoodie2",
                 name: "Patchwork Hoodies",
                 price: 43.0,
-                image: "/fashion-fusion/images/hoodies/hoodies2.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies2.webp",
                 description: "This trendy hoodie boasts a unique patchwork design, combining different textures and colors for a bold statement. Perfect for fashion-forward individuals who love to stand out."
             },
             {
                 id: "hoodie3",
                 name: "Cardigan Hoodies",
                 price: 53.98,
-                image: "/fashion-fusion/images/hoodies/hoodies3.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies3.webp",
                 discount: 15,
                 description: "A blend of comfort and style, this cardigan-style hoodie is perfect for layering. Made from soft materials, it provides warmth without compromising on breathability."
             },
@@ -120,35 +120,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 id: "hoodie4",
                 name: "Classic Hoodie",
                 price: 79.99,
-                image: "/fashion-fusion/images/hoodies/hoodies4.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies4.webp",
                 description: "A timeless classic hoodie that goes with everything. Features a drawstring hood, kangaroo pocket, and a relaxed fit for all-day comfort. A must-have for any wardrobe."
             },
             {
                 id: "hoodie5",
                 name: "Zip-up Hoodie",
                 price: 85.5,
-                image: "/fashion-fusion/images/hoodies/hoodies5.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies5.webp",
                 description: "This versatile zip-up hoodie offers easy wearability and a sleek design. Made with premium materials for durability and comfort, it's perfect for outdoor activities or casual outings."
             },
             {
                 id: "hoodie6",
                 name: "Oversized Hoodie",
                 price: 92.0,
-                image: "/fashion-fusion/images/hoodies/hoodies6.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies6.webp",
                 description: "Stay cozy in this oversized hoodie, designed for a relaxed and trendy fit. Its plush fabric and spacious design make it perfect for lounging or layering on colder days."
             },
             {
                 id: "hoodie7",
                 name: "Graphic Hoodie",
                 price: 88.75,
-                image: "/fashion-fusion/images/hoodies/hoodies7.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies7.webp",
                 description: "A bold graphic hoodie featuring eye-catching designs that let you express your personality. Perfect for casual wear or making a statement on the go."
             },
             {
                 id: "hoodie8",
                 name: "Tech Hoodie",
                 price: 105.0,
-                image: "/fashion-fusion/images/hoodies/hoodies8.webp",
+                image: "/fashion-fusion/src/assets/images/hoodies/hoodies8.webp",
                 description: "An innovative tech hoodie with moisture-wicking fabric and a sleek, modern design. Ideal for active lifestyles or anyone who values functionality with style."
             },
         ],
@@ -157,28 +157,28 @@ document.addEventListener("DOMContentLoaded", () => {
                 id: "jacket1",
                 name: "Denim Jacket",
                 price: 89.99,
-                image: "/fashion-fusion/images/jacket/jacket.webp",
+                image: "/fashion-fusion/src/assets/images/jacket/jacket.webp",
                 description: "A rugged denim jacket that exudes timeless style. Designed for durability and versatility, it's the perfect layer for casual and smart-casual outfits alike."
             },
             {
                 id: "jacket2",
                 name: "Motorcycle Jacket",
                 price: 120.0,
-                image: "/fashion-fusion/images/jacket/jacket2.webp",
+                image: "/fashion-fusion/src/assets/images/jacket/jacket2.webp",
                 description: "An edgy motorcycle jacket crafted from high-quality materials for a bold and confident look. Features sturdy zippers, stylish lapels, and a perfect fit for road trips or city adventures."
             },
             {
                 id: "jacket3",
                 name: "Baseball Jacket",
                 price: 95.5,
-                image: "/fashion-fusion/images/jacket/jacket3.webp",
+                image: "/fashion-fusion/src/assets/images/jacket/jacket3.webp",
                 description: "A sporty baseball jacket with a classic design and comfortable fit. Ideal for casual outings, this jacket pairs well with jeans or joggers for a laid-back vibe."
             },
             {
                 id: "jacket4",
                 name: "Leather Jacket",
                 price: 199.99,
-                image: "/fashion-fusion/images/jacket/jacket4.webp",
+                image: "/fashion-fusion/src/assets/images/jacket/jacket4.webp",
                 description: "A premium leather jacket with a sleek, tailored fit. Its luxurious finish and timeless appeal make it a statement piece for any wardrobe."
             },
         ],
