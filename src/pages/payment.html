@@ -7,40 +7,36 @@
     <link rel="icon" type="image/webp" href="../assets/images/fav.webp">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="../js/payment.js" defer></script>
 </head>
 <body>
 <div class="payment-container">
-    <div id="loader" class="loader">
-        <div class="spinner"></div>
-    </div>
-    <form id="payment-form" class="payment-form hidden" action="../../process_payment.php" method="POST">
-        <h2>Payment Details</h2>
-        <div class="form-group">
-            <label for="card-number">Card number</label>
-            <input type="text" id="card-number" maxlength="19" placeholder="1234 5678 9012 3456" />
-            <span id="card-number-error" class="error hidden"></span>
+        <h2>Payment Information</h2>
+        <div class="payment-info">
+            <p>As a wholesale supplies company we accept only Bank Transfer, the details are provided below:</p>
+            <div class="bank-details">
+                <p><strong>Recipient:</strong> FashionFusion</p>
+                <p><strong>Account number:</strong> 4200012345</p>
+                <p><strong>BSB code:</strong> 033-547</p>
+            </div>
+            <div class="payment-info">
+                <p>For all questions, please contact us:</p>
+                <div class="payment-method email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:fashionfusionez@outlook.com">fashionfusionez@outlook.com</a>
+                </div>
+                <div class="payment-method phone">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+0422231664">+0422 231 664</a>
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="form-row">
-            <div class="form-group">
-                <label for="expiry-date">Expiry Date</label>
-                <input type="text" id="expiry-date" placeholder="MM/YY" required>
-                <span id="expiry-date-error" class="error hidden"></span>
-            </div>
-            <div class="form-group">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" placeholder="123" required>
-                <span id="cvv-error" class="error hidden"></span>
-            </div>
+        <div class="navigation-links">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="../../index.html" class="nav-link">Back to Home</a>
         </div>
-        <div class="form-group">
-            <label for="cardholder-name">Cardholder Name</label>
-            <input type="text" id="cardholder-name" placeholder="John Doe" required>
-        </div>
-        <button type="submit" class="pay-button">Pay Now</button>
-        <a href="../../index.html" class="pay-button">Home</a>
-    </form>
 </div>
 
 </body>
