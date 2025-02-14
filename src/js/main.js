@@ -436,7 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (userNameElement) userNameElement.textContent = ""; // Очищаем имя
             if (userIconElement) userIconElement.style.display = "block"; // Показываем иконку
             if (logoutButton) logoutButton.style.display = "none"; // Скрываем кнопку выхода
-            window.location.href = "auth.html"; // Перенаправляем на страницу авторизации
+            window.location.href = "../../auth.html"; // Перенаправляем на страницу авторизации
         });
     }
 
